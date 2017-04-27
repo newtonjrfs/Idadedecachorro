@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Idade de cachorro</string>
+    <string name="texto_pergunta">Digite a idade do seu cachorro para saber qual a idade dele em anos humanos</string>
+    <string name="erro_idade_cachorro">O campo da idade do cachorro não pode ser nula!</string>
+</resources>

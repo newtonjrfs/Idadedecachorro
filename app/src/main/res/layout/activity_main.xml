@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cor_fundo"
+    tools:context="com.newton.idadedecachorro.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/cachorro" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@color/cor_fundo_botao"
+        android:fontFamily="casual"
+        android:padding="10dp"
+        android:text="@string/texto_pergunta"
+        android:textColor="@color/cor_texto_fundo"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/idadeCachorro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:background="@color/cor_texto_fundo"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/botaoCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idadeCachorro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Descobrir idade"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/botaoCalcular"
+        android:layout_marginTop="27dp"
+        android:fontFamily="casual"
+        android:padding="10dp"
+        android:textColor="@color/cor_texto_fundo"
+        android:textSize="16sp" />
+</RelativeLayout>
